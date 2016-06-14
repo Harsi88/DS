@@ -1,0 +1,60 @@
+Found new path from 50 of length 38 : 
+50 51 52 62 63 64 54 55 56 57 58 59
+Found blocked vertex at 51
+Found new path from 50 of length 46 : 
+50 60 61 71 72 73 63 64 54 55 56 57 58 59
+Found blocked vertex at 61
+Found new path from 60 of length 44 : 
+60 70 71 72 73 63 64 54 55 56 57 58 59
+Found blocked vertex at 71
+Found new path from 70 of length 57 : 
+70 80 81 91 92 82 72 73 63 64 54 55 56 57 58 59
+Found blocked vertex at 81
+Found new path from 80 of length 56 : 
+80 90 91 92 82 72 73 63 64 54 55 56 57 58 59
+Found blocked vertex at 73
+Found new path from 72 of length 40 : 
+72 62 63 64 54 55 56 57 58 59
+Found blocked vertex at 63
+Found new path from 62 of length 35 : 
+62 52 53 54 55 56 57 58 59
+Found blocked vertex at 53
+Found new path from 52 of length 37 : 
+52 42 43 44 54 55 56 57 58 59
+Found blocked vertex at 43
+Found new path from 42 of length 47 : 
+42 32 33 34 35 36 37 38 48 49 59
+Found blocked vertex at 33
+Found new path from 32 of length 50 : 
+32 22 23 24 34 35 36 37 38 48 49 59
+Found blocked vertex at 23
+Found new path from 22 of length 58 : 
+22 12 13 14 24 34 35 36 37 38 48 49 59
+Found blocked vertex at 13
+Found new path from 12 of length 52 : 
+12 2 3 4 5 15 25 26 27 37 38 48 49 59
+Found blocked vertex at 15
+Found new path from 5 of length 39 : 
+5 6 16 26 27 37 38 48 49 59
+Found blocked vertex at 27
+Found new path from 26 of length 28 : 
+26 36 37 38 48 49 59
+Found blocked vertex at 37
+Found new path from 36 of length 20 : 
+36 46 47 48 49 59
+Found blocked vertex at 47
+Found new path from 46 of length 19 : 
+46 56 57 58 59
+Found blocked vertex at 57
+Found new path from 56 of length 34 : 
+56 66 67 68 58 59
+Found blocked vertex at 67
+Found new path from 66 of length 36 : 
+66 76 77 78 68 58 59
+Found blocked vertex at 77
+Found new path from 76 of length 41 : 
+76 86 87 88 78 68 58 59
+Found blocked vertex at 87
+Found new path from 86 of length 51 : 
+86 96 97 98 99 89 79 69 59
+Reached goal

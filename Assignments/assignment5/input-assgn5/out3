@@ -1,0 +1,31 @@
+Found new path from 9 of length 18 : 
+9 19 29 28 27 26 36 46 56 55 54 53 52 62 61 60 70 80 90
+Found blocked vertex at 55
+Found new path from 56 of length 10 : 
+56 66 76 86 85 95 94 93 92 91 90
+Found blocked vertex at 66
+Found new path from 56 of length 12 : 
+56 57 67 77 87 86 85 95 94 93 92 91 90
+Found blocked vertex at 77
+Found new path from 67 of length 12 : 
+67 68 78 88 98 97 96 95 94 93 92 91 90
+Found blocked vertex at 88
+Found new path from 78 of length 12 : 
+78 79 89 99 98 97 96 95 94 93 92 91 90
+Found blocked vertex at 99
+Found new path from 89 of length 18 : 
+89 79 78 68 67 57 56 46 45 44 54 53 52 62 61 60 70 80 90
+Found blocked vertex at 44
+Found new path from 45 of length 12 : 
+45 35 34 33 43 53 52 62 61 60 70 80 90
+Found blocked vertex at 33
+Found new path from 34 of length 12 : 
+34 24 23 22 21 20 30 40 50 60 70 80 90
+Found blocked vertex at 22
+Found new path from 23 of length 12 : 
+23 13 12 11 21 20 30 40 50 60 70 80 90
+Found blocked vertex at 11
+Found new path from 12 of length 12 : 
+12 2 1 0 10 20 30 40 50 60 70 80 90
+Found blocked vertex at 0
+No path to goal exists

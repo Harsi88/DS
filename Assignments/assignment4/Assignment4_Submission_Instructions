@@ -1,0 +1,62 @@
+This is the fourth Assignment for CSL 201. The last date for submission is Wednesday, October 24, 2012 
+by midnight.
+
+The description of the assignment and input-output formats are given in the handout "Assignment3" on
+moodle.
+
+We are giving five input test files in0, in1, in2, in3, in4 in the tar archive ``input-assgn4.tar.gz". 
+The description of each test case along with the correct output is given in the file ``test_cases_skip_list".
+
+Please EXACTLY follow the instructions given below, as your programs may be checked by a shell script.
+
+HOW TO SUBMIT
+-------------
+
+1. The C++ program should be named "skiplist.cpp". 
+
+2. If your first name is X and last name is Y, make a directory "X_Y_HW4" and copy the above
+   file to that directory.
+
+3. You will submit a tar archive of directory X_Y_HW4 on moodle. A tar archive performs the same
+   function as WinZip on windows. It allows you to compress several files into a single 
+   file. To create a .tar archive of all your assignment programs, type the following command :
+
+   tar cvzf X_Y_HW4.tar.gz X_Y_HW4/
+
+   This command directs the computer to make a single tar archive with name "X_Y_HW4.tar.gz"
+   of all files in the directory X_Y_HW4. Note that you have to run this command in the parent
+   directory of X_Y_HW4.
+
+   Once the file "X_Y_HW4.tar.gz" is created, you can check its contents (i.e., the names of files
+   it contains) by the following command :
+
+   tar tzf X_Y_HW4.tar.gz
+
+3. Login into moodle and click on the link "Submit Assignment4" (the link just below the link you used
+   to download this file).  Next upload the file "X_Y_HW4.tar.gz" to moodle by using the link at the bottom of 
+   the page. Your assignment submission is complete.
+
+4. We will download your submission from moodle, compile and run the programs on test
+   cases using a shell script and give you marks for the assignment. Moodle will show the marks obtained by you 
+   on the assignment after the grading is complete.
+
+IMPORTANT REMARKS
+-----------------
+0. Your program should not be distributed over multiple files. As asked above, please submit a single file
+   named "skiplist.cpp".
+
+1. Your program should be WRITTEN IN C++. You should not use any other programming 
+   language including Java.
+
+2. If your program does not work on even the simplest examples, you should expect no more than 30% marks.
+   The same holds if your program gives compilation errors. The total score will depend roughly on the number 
+   of test cases for which your algorithm gives the correct answer.
+
+3. Your program should read input in the input format given in the problem statement. Avoid devising your
+   own input formats. These are all right for initial coding, but your submission should accept input
+   in the format given in the problem statement. 
+
+4. It is your responsibility that your programs compile and run on the Linux machines in the Computer Lab. This
+   is where your programs will be compiled and tested. If you used Windows/Turbo C++ for coding, you should test 
+   your programs on the Linux machines in the lab before submission. No complaints in this regard will be 
+   entertained.

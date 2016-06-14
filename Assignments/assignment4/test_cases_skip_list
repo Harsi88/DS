@@ -1,0 +1,65 @@
+Instructions: 
+
+   We are uploading 5 files contains test cases 0 to 4. The files are contained in the tar 
+   archive "input-assgn4.tar.gz".
+   
+   For example, to run your program on test case 3, run the following command on your terminal:
+  
+   ./a.out <in3
+
+   I am assuming that the name of your executable is "a.out".
+ 
+   The "<" operator in Linux takes the input for a program from the filename specified after it,
+   instead of taking input from the keyboard.
+              
+
+0. Insert 1000 random numbers into the skip-list, and then find the median.
+
+   Input File: in0
+ 
+   Output:
+	4892
+
+1. Insert 1000 numbers into the skip-list, delete half the numbers, and find the median of the resulting tree.
+
+   Input File: in1
+
+   Output:
+	9663
+
+2. Insert 1000 random numbers into the skip-list between 0 and 30000. Find the 100th, 200th, 300th, 400th, 500th,
+   600th, 700th, 800th, and 900th smallest numbers.
+
+   Input File: in2
+ 
+   Output:
+	3237
+	6240
+	9141
+	12041
+	14658
+	18349
+	21770
+	24490
+	26943
+
+3. Insert 1000 random numbers between 0 and 20000 into the skip-list. Next, insert 1000 random numbers between 20000
+   and 40000 into the skip-list. Finally, insert 1000 random numbers between 40000 and 60000 into the skip-list.
+   Find the 1500th smallest numbers in the resulting skip-list
+
+   Input File: in3
+
+   Output:
+	30335 
+
+
+4. Generate a sequence S of 1000 random numbers between 0 and 20000 in sorted order. First, insert the 500 numbers at odd positions in S 
+   into the skip-list. Next, find the 250th smallest element. Next, insert the remaining 500 numbers at even positions in S into the skip-list.
+   Find the 437th smallest element. Delete a quarter of the numbers. Find the 561th smallest element in the skip-list.
+
+   Input File: in4
+
+   Output:
+	9949
+	8784
+	15098

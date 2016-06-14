@@ -1,0 +1,10 @@
+Found new path from 2 of length 13 : 
+2 1 4 7 6
+Found blocked vertex at 4
+Found new path from 1 of length 22 : 
+1 2 5 8 7 6
+Found blocked vertex at 8
+Found new path from 5 of length 38 : 
+5 2 1 0 3 6
+Found blocked vertex at 0
+No path to goal exists

@@ -1,0 +1,81 @@
+Instructions: 
+
+   We are uploading 6 files contains test cases 0 to 5. The files are contained in the tar 
+   archive "input-assgn3.tar.gz".
+   
+   For example, to run your program on test case 3, run the following command on your terminal:
+  
+   ./a.out <in3
+
+   I am assuming that the name of your executable is "a.out".
+ 
+   The "<" operator in Linux takes the input for a program from the filename specified after it,
+   instead of taking input from the keyboard.
+              
+
+0. Insert 1000 random numbers into tree T0, and then find the median.
+
+   Input File: in0
+ 
+   Output:
+	4892
+
+1. Insert 1000 numbers into tree T0, delete half the numbers, and find the median of the resulting tree.
+
+   Input File: in1
+
+   Output:
+	9663
+
+2. Insert 1000 random numbers into tree T0 between 0 and 30000. Split tree T0 about 20000 to get two trees
+   T1 and T2. Split tree T1 about 10000 to get two trees T3 and T4. As a check, find the 50th, 51st, and 52nd
+   element in trees T2, T3, and T4, respectively. 
+
+   Input File: in2
+ 
+   Output:
+	1871
+	11644
+	21841
+	
+3. Uses three-way join to make a red-black tree containing 999 integers, assuming they are given
+   in sorted order. First make two singleton trees containing the 1st and 3rd elements and join them into a 
+   single tree T using the 2nd element. Then make a singleton tree containing the 5th element and joins it with 
+   the above tree T using the 4th element. Repeat this process, adding elements in pairs, till we get a tree containing 
+   all 999 elements. To check that it works, find the median of the resulting tree.
+
+   Input File: in3
+
+   Output:
+	24726
+
+4. Make 16 trees T0-T15, with the $i$th tree having 1000 keys between (i-1)*10000+1 and i*10000-1.
+   Merge them recursively using three-way join into a single tree T30 with 16,000 keys. Ask for 
+   the 7367th smallest key in this tree.
+
+   Input File: in4
+
+   Output:
+	73770
+
+5. Make a single tree T0 containing 2000 keys between 0 and 80000. Splits T0 about
+   40000 into T1 and T2. Recursively split T1 about 20000 into T3 and T4, and
+   T2 about 60000 into T5 and T6. Split T3 about 10000 into T7 and T8, T4 about
+   30000 into T9 and T10, T5 about 50000 into T11 and T12, and T6 about 70000 into
+   T13 and T14. 
+
+   To check that everything is correct, finds the 50th smallest element in each of
+   trees T7-T14. 
+
+   Input File: in5
+
+   Output:
+	2154
+	11944
+	21416
+	32470
+	42128
+	51939
+	62113
+	71810
+

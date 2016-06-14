@@ -1,0 +1,239 @@
+Instructions: 
+
+   We are uploading 6 files contains test cases 0 to 5. The files are contained in the tar 
+   archive "input-assgn5.tar.gz".
+   
+   For example, to run your program on test case 3, run the following command on your terminal:
+  
+   ./a.out <in3
+
+   I am assuming that the name of your executable is "a.out".
+ 
+   The "<" operator in Linux takes the input for a program from the filename specified after it,
+   instead of taking input from the keyboard.
+
+   IMPORTANT: Note that at any point of time, there may be many possible shortest paths available to the robot.
+              The behaviour of Stentz's algorithm depends on the shortest path you choose at each step. 
+              Therefore, the path traced by the robot may be different for different implementations.
+               
+              We will check your programs by giving your output to a ``checker", which will verify whether
+              the behaviour of your robot is consistent with the algorithm. Therefore, you should EXACTLY
+              follow the output format described below.
+
+	      We are giving an executable ``checker" with this tar archive. It can be used to check whether the
+              output of your program is correct. For example, to check your program on in5, first save the
+              output to a file, say out5.
+            
+              Then, run the following command:
+
+	      ./checker in5 <out5
+
+              Note that the input in5 and output out 5 must be in the same directory as the checker.
+              The checker will output "Correct" or "Incorrect" based on whether your algorithm gives the correct
+              output or not. 
+
+              Your program outputs will be checked in the above manner. Make sure you adhere to the output
+              format described in the assignment handout. Also, the executable may not run on your computer, as it
+              was compiled on my machine.
+
+0. The 9-node grid graph described in assignment handout with blocked vertices at 0 and 8. 
+ 
+   Output:
+
+	Found new path from 6 of length 4 : 
+	6 3 0 1 2
+	Found blocked vertex at 0
+	Found new path from 3 of length 3 : 
+	3 4 5 2
+	Reached goal
+
+1. The 9-node grid graph described in assignment handout with blocked vertices at 0, 4, and 8.
+             
+   Output:
+
+	Found new path from 2 of length 4 : 
+	2 5 8 7 6
+	Found blocked vertex at 8
+	Found new path from 5 of length 3 : 
+	5 4 7 6
+	Found blocked vertex at 4
+	Found new path from 5 of length 5 : 
+	5 2 1 0 3 6
+	Found blocked vertex at 0
+	No path to goal exists
+
+2. A 4*4 square grid with start vertex at lower right corner, goal vertex at upper left corner, and all
+   vertices on the diagonal from lower left corner to upper right corner blocked.
+
+   Output:
+
+	Found new path from 3 of length 6 : 
+	3 2 6 10 14 13 12
+	Found blocked vertex at 10
+	Found new path from 6 of length 4 : 
+	6 5 9 13 12
+	Found blocked vertex at 5
+	Found new path from 6 of length 6 : 
+	6 7 11 15 14 13 12
+	Found blocked vertex at 15
+	Found new path from 11 of length 8 : 
+	11 7 6 2 1 0 4 8 12
+	Found blocked vertex at 0
+	No path to goal exists
+
+3. The same construction as test case 2 above, but now with a 10*10 grid graph. 
+
+   Output:
+
+	Found new path from 9 of length 18 : 
+	9 19 29 28 27 26 36 46 56 55 54 53 52 62 61 60 70 80 90
+	Found blocked vertex at 55
+	Found new path from 56 of length 10 : 
+	56 66 76 86 85 95 94 93 92 91 90
+	Found blocked vertex at 66
+	Found new path from 56 of length 12 : 
+	56 57 67 77 87 86 85 95 94 93 92 91 90
+	Found blocked vertex at 77
+	Found new path from 67 of length 12 : 
+	67 68 78 88 98 97 96 95 94 93 92 91 90
+	Found blocked vertex at 88
+	Found new path from 78 of length 12 : 
+	78 79 89 99 98 97 96 95 94 93 92 91 90
+	Found blocked vertex at 99
+	Found new path from 89 of length 18 : 
+	89 79 78 68 67 57 56 46 45 44 54 53 52 62 61 60 70 80 90
+	Found blocked vertex at 44
+	Found new path from 45 of length 12 : 
+	45 35 34 33 43 53 52 62 61 60 70 80 90
+	Found blocked vertex at 33
+	Found new path from 34 of length 12 : 
+	34 24 23 22 21 20 30 40 50 60 70 80 90
+	Found blocked vertex at 22
+	Found new path from 23 of length 12 : 
+	23 13 12 11 21 20 30 40 50 60 70 80 90
+	Found blocked vertex at 11
+	Found new path from 12 of length 12 : 
+	12 2 1 0 10 20 30 40 50 60 70 80 90
+	Found blocked vertex at 0
+	No path to goal exists
+
+4. A 10*10 grid graph with start vertex at lower right corner, and goal vertex at upper, left corner. 
+   The graph is weighted, and weight of each edge is an integer in the range [1,10]. A random subset of 30
+   vertices in the graph are blocked.
+
+
+   Output:
+	Found new path from 9 of length 58 : 
+	9 8 7 17 16 26 25 24 34 44 43 53 63 73 72 82 92 91 90
+	Found blocked vertex at 44
+	Found new path from 34 of length 49 : 
+	34 35 45 55 54 64 63 73 72 82 92 91 90
+	Found blocked vertex at 35
+	Found new path from 34 of length 50 : 
+	34 33 32 42 52 62 61 71 81 91 90
+	Found blocked vertex at 33
+	Found new path from 34 of length 60 : 
+	34 24 23 22 32 42 52 62 61 71 81 91 90
+	Found blocked vertex at 23
+	Found new path from 24 of length 61 : 
+	24 25 26 36 46 56 55 54 64 63 73 72 82 92 91 90
+	Found blocked vertex at 36
+	Found new path from 26 of length 65 : 
+	26 27 37 47 57 56 55 54 64 63 73 72 82 92 91 90
+	Found blocked vertex at 37
+	Found new path from 27 of length 66 : 
+	27 28 38 48 58 57 56 55 54 64 63 73 72 82 92 91 90
+	Found blocked vertex at 48
+	Found new path from 38 of length 66 : 
+	38 39 49 59 58 57 56 55 54 64 63 73 72 82 92 91 90
+	Found blocked vertex at 49
+	Found new path from 39 of length 94 : 
+	39 29 28 27 26 25 24 14 13 12 11 21 20 30 40 50 60 70 80 90
+	Found blocked vertex at 14
+	Found new path from 24 of length 77 : 
+	24 25 15 5 4 3 2 12 11 21 20 30 40 50 60 70 80 90
+	Found blocked vertex at 4
+	No path to goal exists
+
+5. A 10*10 grid graph with start vertex at the middle of left edge and goal vertex at the middle of right edge. The graph
+   is weighted, and the weight of each edge is an integer in the range [1,20]. The obstacles consists of four 
+   vertical slabs of unit width and length 8.
+
+
+   Output:
+
+	Found new path from 50 of length 38 : 
+	50 51 52 62 63 64 54 55 56 57 58 59
+	Found blocked vertex at 51
+	Found new path from 50 of length 46 : 
+	50 60 61 71 72 73 63 64 54 55 56 57 58 59
+	Found blocked vertex at 61
+	Found new path from 60 of length 44 : 
+	60 70 71 72 73 63 64 54 55 56 57 58 59
+	Found blocked vertex at 71
+	Found new path from 70 of length 57 : 
+	70 80 81 91 92 82 72 73 63 64 54 55 56 57 58 59
+	Found blocked vertex at 81
+	Found new path from 80 of length 56 : 
+	80 90 91 92 82 72 73 63 64 54 55 56 57 58 59
+	Found blocked vertex at 73
+	Found new path from 72 of length 40 : 
+	72 62 63 64 54 55 56 57 58 59
+	Found blocked vertex at 63
+	Found new path from 62 of length 35 : 
+	62 52 53 54 55 56 57 58 59
+	Found blocked vertex at 53
+	Found new path from 52 of length 37 : 
+	52 42 43 44 54 55 56 57 58 59
+	Found blocked vertex at 43
+	Found new path from 42 of length 47 : 
+	42 32 33 34 35 36 37 38 48 49 59
+	Found blocked vertex at 33
+	Found new path from 32 of length 50 : 
+	32 22 23 24 34 35 36 37 38 48 49 59
+	Found blocked vertex at 23
+	Found new path from 22 of length 58 : 
+	22 12 13 14 24 34 35 36 37 38 48 49 59
+	Found blocked vertex at 13
+	Found new path from 12 of length 52 : 
+	12 2 3 4 5 15 25 26 27 37 38 48 49 59
+	Found blocked vertex at 15
+	Found new path from 5 of length 39 : 
+	5 6 16 26 27 37 38 48 49 59
+	Found blocked vertex at 27
+	Found new path from 26 of length 28 : 
+	26 36 37 38 48 49 59
+	Found blocked vertex at 37
+	Found new path from 36 of length 20 : 
+	36 46 47 48 49 59
+	Found blocked vertex at 47
+	Found new path from 46 of length 19 : 
+	46 56 57 58 59
+	Found blocked vertex at 57
+	Found new path from 56 of length 34 : 
+	56 66 67 68 58 59
+	Found blocked vertex at 67
+	Found new path from 66 of length 36 : 
+	66 76 77 78 68 58 59
+	Found blocked vertex at 77
+	Found new path from 76 of length 41 : 
+	76 86 87 88 78 68 58 59
+	Found blocked vertex at 87
+	Found new path from 86 of length 51 : 
+	86 96 97 98 99 89 79 69 59
+	Reached goal
+
+6. The 9-node grid graph described in assignment handout, only this time with weighted edges.
+
+   Output:
+	Found new path from 2 of length 13 : 
+	2 1 4 7 6
+	Found blocked vertex at 4
+	Found new path from 1 of length 22 : 
+	1 2 5 8 7 6
+	Found blocked vertex at 8
+	Found new path from 5 of length 38 : 
+	5 2 1 0 3 6
+	Found blocked vertex at 0
+	No path to goal exists
+
